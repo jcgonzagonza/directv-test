@@ -1,0 +1,10 @@
+{
+	"eslintIntegration": true,
+	"jsxSingleQuote": true,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"tslintIntegration": true,
+	"useTabs": true,
+	"printWidth": 150,
+	"tabWidth": 4
+}
