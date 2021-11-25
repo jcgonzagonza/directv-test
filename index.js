@@ -24,7 +24,7 @@ const dashboadRoutes = require('./routes/dashboard');
 const verifyToken = require('./routes/validate-token');
 
 // route middlewares
-app.use('/api/user', authRoutes);
+app.use('/api', authRoutes);
 app.get('/', (req, res) => {
 	res.json({
 		estado: true,

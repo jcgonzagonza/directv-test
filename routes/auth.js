@@ -15,7 +15,7 @@ const schemaRegister = Joi.object({
 });
 
 // eslint-disable-next-line consistent-return
-router.post('/register', async (req, res) => {
+router.post('users/', async (req, res) => {
 	// validate user
 	const { error } = schemaRegister.validate(req.body);
 
@@ -53,7 +53,7 @@ const schemaLogin = Joi.object({
 });
 
 // eslint-disable-next-line consistent-return
-router.post('/singin', async (req, res) => {
+router.post('users/login', async (req, res) => {
 	// validaciones
 	const { error } = schemaLogin.validate(req.body);
 	if (error) return res.status(400).json({ message: error.details[0].message });
